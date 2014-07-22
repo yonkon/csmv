@@ -1,0 +1,12 @@
+{
+    "default_style": "modern",
+    "names": {
+        "modern": "Modern"
+    },
+    "default": {
+        "modern": true,
+        "Woody": true,
+        "Greeny": true,
+        "Facebook": true
+    }
+}

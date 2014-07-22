@@ -1,0 +1,99 @@
+a:hover {
+    text-decoration: underline;
+}
+.ty-sidebox {
+	background: transparent;
+}
+.ty-sidebox {
+	border: 1px solid #EAE9E5;
+	padding: 10px;
+}
+.top-quick-links a:hover, .ty-currencies__item:hover {
+	text-decoration: none;
+}
+.ty-sidebox__title-wrapper, .ty-sidebox__title span, .ty-sidebox__title a {
+	color: @font;
+}
+.ty-footer-menu__header, .ty-footer-menu__item {
+	border-bottom: 1px solid lighten(@footer_bg, 5%);
+}
+.ty-product-filters__title {
+	color: @font;	
+}
+.ui-dialog .ui-dialog-titlebar {
+	background: #888;
+}
+div.ui-dialog .ui-dialog-title {
+	color: white;
+}
+.ty-dropdown-box__content .ty-dropdown-box__item:hover {
+	background: lighten(@font, 45%);
+}
+.ty-dropdown-box__content .ty-account-info__name:hover {
+	background: transparent;
+}
+.ty-account-info__item .ty-account-info__a {
+	color: @font;
+}
+.tygh-footer .ty-footer-grid {
+  	max-width: 1240px;
+	min-width: 320px;
+	margin: 0 auto;
+	background: @footer_bg;
+}
+.ty-menu__item .ty-menu__item-link {
+	text-transform: uppercase;
+	text-decoration: @headings_font_decoration;
+    font-weight: @headings_font_weight;
+    font-style: @headings_font_style;
+    font-size: 14px;
+    font-family: @headings_font;
+    text-shadow: 1px 1px 0 darken(@menu, 20%);
+}
+.ty-social-link:hover a, .ty-pagination a {
+	text-decoration: none;
+}
+.ty-menu__submenu-item-header .ty-menu__submenu-link, .ty-menu__submenu-items .ty-menu__submenu-link {
+	color: @font;
+}
+.no-touch .ty-menu__item:hover .ty-menu__item-link,
+.is-hover-menu .ty-menu__item-link,
+.is-hover-menu.ty-menu__item-active .ty-menu__item-link {
+	text-shadow: 1px 1px 0 darken(@menu, 20%);
+	background: darken(@menu, 10%);
+}
+.ty-sort-dropdown__content-item-a, .ty-select-block__list-a {
+	color: @font;
+}
+.ty-sort-dropdown__content-item-a:hover, .ty-select-block__list-a:hover {
+	background: lighten(@font, 45%);
+	color: white;
+}
+.ty-footer-menu__header {
+	color: @links;
+}
+.ty-grid-list__item-name .product-title {
+	color: @links;
+}
+.ty-grid-list__price .ty-list-price {
+	display: block;
+	color: @font;
+}
+.ty-strike .ty-list-price {
+	display: inline;
+}
+.ty-product-block__button .ty-btn {
+	margin-right: 17px;
+}
+.ty-product-block__button .ty-btn__text {
+	padding: 0px;
+	color: @links;
+}
+@media (max-width: 979px) and (min-width: 768px) {
+	.ty-menu__item .ty-menu__item-link {
+		padding: 14px 11px;
+	}
+	.ty-price-slider__input-text {
+		width: 62px;
+	}
+}

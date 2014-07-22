@@ -1,0 +1,53 @@
+#main_content {
+width: 100%;
+height: 100%;
+margin: 0;
+
+
+
+}
+#top {
+width: 100%;
+height: 100px
+
+}
+#left_menu {
+width: 30%;
+float: left;
+}
+
+#content {
+
+float: left;
+width: 70%;
+
+}
+
+.product_div {
+	margin: 5px 5px;
+width: 90%;
+
+}
+
+.product_sort {
+display: inline-block;
+
+}
+
+#za9vka_div {
+width:70%;
+height:70%;
+margin: 5% auto;
+
+}
+#top_za9vka {
+width: 100%;
+height: 50px
+}
+#content_za9vka {
+ width: 100%
+}
+
+.close {
+right: 5px
+}

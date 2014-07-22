@@ -1,0 +1,253 @@
+<?xml version="1.0"?>
+<!-- rus_build_install dbazhenov -->
+<addon scheme="2.0">
+	<id>rus_build_pack</id>
+	<name>Русская локализация</name>
+    <priority>4500</priority>
+    <version>2.4.install</version>
+	<position>0</position>
+    <auto_install>ULTIMATE</auto_install>
+    <status>active</status>
+    <description>Мастер установки "Русской локализации CS-Cart"</description>
+    <default_language>ru</default_language>
+    <translations> 
+        <item for="name" lang="en">Russian localization for CS-Cart</item>
+        <item for="description" lang="en">Setup Wizard "Russian localization for CS-Cart"</item>
+    </translations>
+    <settings layout="separate" edition_type="ROOT,ULT:VENDOR">
+        <sections>
+            <section id="instruction">
+                <name>Инструкции</name>
+                <translations>
+                    <item lang="en">Instructions</item>
+                </translations>
+                <items>
+                    <item id="instruction">
+                        <type>template</type>
+                        <default_value>instruction.tpl</default_value>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+    <language_variables>
+        <item lang="en" id="rus_build_pack.day">day</item>
+        <item lang="en" id="rus_build_pack.how_days">days</item>
+        <item lang="en" id="rus_build_pack.hour">hour</item>
+        <item lang="en" id="rus_build_pack.how_hours">hours</item>
+        <item lang="ru" id="rus_build_pack.day">день</item>
+        <item lang="ru" id="rus_build_pack.how_days">дней</item>
+        <item lang="ru" id="rus_build_pack.hour">час</item>
+        <item lang="ru" id="rus_build_pack.how_hours">часов</item>
+
+
+        <item lang="ru" id="rus_connect.end_trial_text">Период действия пробной версии окончен. Вам необходимо приобрести лицензионный ключ на "Русскую локализацию CS-Cart". Пожалуйста, приобретите полный лицензионный ключ и активируйте его.</item> 
+        <item lang="en" id="rus_connect.end_trial_text">Trial period has expired. You need to purchase a license key of "Russian localization for CS-Cart". Please purchase a license key and activate it.</item> 
+        <item lang="ru" id="rus_connect.end_trial_notify">Пробный период "Русской локализации CS-Cart" истёк.</item> 
+        <item lang="en" id="rus_connect.end_trial_notify">Trial period of "Russian localization for CS-Cart" has expired.</item>
+        <item lang="ru" id="rus_build_pack.end_tial_to">Тестовый период окончен. Дата окончания: </item> 
+        <item lang="en" id="rus_build_pack.end_tial_to">Trial period has expired. Expiration date: </item>
+        <item lang="ru" id="rus_connect.end_trial_text">Период действия пробной версии окончен. Вам необходимо приобрести лицензионный ключ на "Русскую локализацию CS-Cart". Пожалуйста, приобретите полный лицензионный ключ и активируйте его.</item>       
+        <item lang="ru" id="rus_connect.end_trial_notify">Пробный период "Русской локализации CS-Cart" истёк.</item>     
+        <item lang="ru" id="rus_connect.license_tab">Активировать лицензионный ключ</item>
+        <item lang="en" id="rus_connect.license_tab">Activate license key</item>
+        <item lang="ru" id="rus_connect.get_trial_tab">Пробная версия</item>
+        <item lang="en" id="rus_connect.get_trial_tab">Trial version</item>
+        <item lang="ru" id="rus_connect.trial_subheader">Тест-драйв без ограничения функционала на 30 дней.</item>
+        <item lang="en" id="rus_connect.trial_subheader">Test it with no functionality limitations for 30 days.</item>
+        <item lang="ru" id="rus_connect.trial_text">Через 30 дней Вам необходимо приобести лицензионный ключ или удалить файлы модулей "Русской локализации CS-Cart" с Вашего магазина.<![CDATA[<br/>]]>Для активации тестового периода введите email от Вашего аккаунта в компании Simtech Development. Если Вы не зарегистрированы, то создайте для себя личный кабинет в системе поддержки Simtech Development по ссылке: <![CDATA[<a href="https://www.simtechdev.com/index.php?dispatch=profiles.add">www.simtechdev.com</a>]]></item>
+        <item lang="en" id="rus_connect.trial_text">In 30 days you will need to buy a license or remove add-on files of "Russian localization for CS-Cart" from your store installation.<![CDATA[<br/>]]>To activate trial period, enter the email of your account in the Help Desk system of Simtech Development. If you are not registered, create an account in Simtech Development Help Desk system at <![CDATA[<a href="https://www.simtechdev.com/index.php?dispatch=profiles.add">www.simtechdev.com</a>]]></item>
+        <item lang="ru" id="rus_connect.install">Русская локализация - Загрузка модулей</item>
+        <item lang="en" id="rus_connect.install">Russian localization - Loading modules</item>
+        <item lang="ru" id="rus_connect.activate_text">Если у Вас нет лицензионного ключа, Вы можете приобрести его у официальных продавцов "Русской локализации CS-Cart" или оставьте заявку на официальном сайте компании Simtech Development  <![CDATA[<a href="http://www.simtechdev.com/">www.simtechdev.com</a>]]> </item>
+        <item lang="en" id="rus_connect.activate_text">If you do not have a license key, you can purchase it from official vendors of "Russian localization for CS-Cart" or post a request at Simtech Development official site <![CDATA[<a href="http://www.simtechdev.com/">www.simtechdev.com</a>]]> </item>
+        <item lang="ru" id="rus_connect.install_text_instruction"><![CDATA[<p>Обновление происходит в несколько шагов:<br/>1. Выберите модули которые необходимо установить или обновить.<br/>2. Мастер установки загрузит необходимые дистрибутивы.<br/>3. Мастер установки загрузит правила обновления для вашей конфигурации. Проверит ваш CS-Cart на наличие конфликтов модулей и права на запись файлов.<br/> 4. Будет выполнено создание резервных копий старых версий и конфликтующих модулей. Старые файлы будут заменены на новые.<br/>5. Новые версии модулей будут переустановлены с востановлением старых настрое (если старые настройки подходят для новой версии модуля).<br/><br/><b>Внимание!</b> Процесс обновления может занимать продолжительное время. При нестабильном или медленном доступе в интернет, рекомендуем выполнять апгрейд модулей частями.]]></item>
+        <item lang="en" id="rus_connect.install_text_instruction"><![CDATA[<p>The upgrade is carried out in several steps:<br/>1. Select the add-ons to be installed or upgraded.<br/>2. Installation Wizard will load the necessary installation package.<br/>3. Installation Wizard will load installation rules for your configuration and check your CS-Cart for add-on conflicts and writing permissions.<br/> 4. Backup copies of old versions and conflict add-ons will be created. The old files will be replaced with the new ones.<br/>5. The new versions of add-ons will be reinstalled with old settings (if old settings are supported by the new version of the add-on).<br/><br/><b>Note!</b> Upgrade process may take a long time. If the internet connection is slow or unstable, we recommend to upgrade the add-ons one by one.]]></item>
+        <item lang="ru" id="rus_connect.install_download_addons">Доступны новые версии модулей:</item>
+        <item lang="en" id="rus_connect.install_download_addons">New versions of add-ons are available:</item>
+        <item lang="ru" id="rus_connect.access_id">Лицензионный ключ</item>
+        <item lang="en" id="rus_connect.access_id">License key</item>
+        <item lang="ru" id="rus_connect.upgrade.no_addons">Вы не выбрали модули для обновления</item>  
+        <item lang="en" id="rus_connect.upgrade.no_addons">No add-ons are selected to be upgraded</item>
+        <item lang="ru" id="rus_connect.upgrade.no_files_permissions">Недостаточно прав для записи файлов.<![CDATA[<br/><a href="[link]">Перейдите к настройкам FTP доступа</a>]]></item>
+        <item lang="ru" id="rus_connect.upgrade.no_files_permissions">No writing permissions.<![CDATA[<br/><a href="[link]">Go to FTP access settings</a>]]></item>
+        <item lang="ru" id="rus_build_menu.rus_upgrade">Центр обновлений</item>
+        <item lang="en" id="rus_build_menu.rus_upgrade">Upgrade center</item>
+        <item lang="ru" id="rus_build_menu.rus_addons">Модули</item>
+        <item lang="en" id="rus_build_menu.rus_addons">Add-ons</item>
+        <item lang="ru" id="rus_build_menu.activate">Активация</item>
+        <item lang="en" id="rus_build_menu.activate">Activation</item>
+        <item lang="ru" id="rus_build_menu">Русская локализация</item>
+        <item lang="en" id="rus_build_menu">Russian localization for CS-Cart</item>
+        <item lang="ru" id="rus_connect.current_version">Текущая версия:</item>
+        <item lang="en" id="rus_connect.current_version">Current version:</item>
+        <item lang="ru" id="rus_connect.updates_available">Доступны новые обновления "Русской локализации CS-Cart"<![CDATA[<br/><a href="[link]">Перейдите в центр обновлений</a>]]></item>
+        <item lang="en" id="rus_connect.updates_available">Upgrades are available<![CDATA[<br/><a href="[link]">Go to the upgrade center</a>]]></item>
+        <item lang="ru" id="rus_connect.new_version">Актуальная версия:</item>
+        <item lang="en" id="rus_connect.new_version">The latest version:</item>
+        <item lang="ru" id="rus_connect.upgrade">Обновить</item>
+        <item lang="en" id="rus_connect.upgrade">Upgrade</item>
+        <item lang="ru" id="rus_connect.download">Загрузить</item>
+        <item lang="en" id="rus_connect.download">Download</item>
+        <item lang="ru" id="rus_connect.check_upgrade">Проверить наличие обновлений</item>
+        <item lang="en" id="rus_connect.check_upgrade">Check for upgrades</item>
+        <item lang="ru" id="rus_connect.upgrade.addon">Обновить</item>
+        <item lang="en" id="rus_connect.upgrade.addon">Upgrade</item>
+        <item lang="ru" id="rus_connect.upgrade.download">Обновить</item>
+        <item lang="en" id="rus_connect.upgrade.download">Upgrade</item>
+        <item lang="ru" id="rus_connect.upgrade">Обновить</item>
+        <item lang="en" id="rus_connect.upgrade">Upgrade</item>
+        <item lang="ru" id="rus_connect.install_subheader">Установка модулей "Русской локализации CS-Cart"</item>
+        <item lang="en" id="rus_connect.install_subheader">Installation of the add-ons of "Russian localization for CS-Cart"</item>
+        <item lang="ru" id="rus_connect.install_text"><![CDATA[<p>Пожалуйста, выберите необходимые модули.</p><p>Модули будут загружены с сервера компании Simtech Development и будут доступны для установки и настройки.</p>]]></item>
+        <item lang="en" id="rus_connect.install_text"><![CDATA[<p>Please select the necessary add-ons.</p><p>They will be downloaded from Simtech Development server and available for installation.</p>]]></item>
+        <item lang="ru" id="rus_connect.install_subheader_instruction">Инструкция</item>
+        <item lang="en" id="rus_connect.install_subheader_instruction">Instructions</item>
+        <item lang="ru" id="rus_connect.deleted_addons">Старые версии модулей, которые будут удалены</item>
+        <item lang="en" id="rus_connect.deleted_addons">Old versions of add-ons to be removed</item>
+        <item lang="ru" id="rus_connect.upgrade.check_conflict_addons">Проверка конфликтующих аддонов</item>
+        <item lang="en" id="rus_connect.upgrade.check_conflict_addons">Checking for conflict add-ons</item>  
+        <item lang="ru" id="rus_connect.conflict_addons_subheader">Обнаружены устаревшие версии модулей</item>
+        <item lang="en" id="rus_connect.conflict_addons_subheader">Outdated versions of add-ons found</item>
+        <item lang="ru" id="rus_connect.conflict_addons_text"><![CDATA[Старые версии модулей могут конфликтовать с модулями "Русской локализации CS-Cart"<br/>Данные модули будут удалены или заменены на новые версии.<br/>Будут созданы резервные копии модулей<br/><b>Внимание!</b>Настройки некоторых модулей могут быть утеряны, по причине несовместимости с новой версией модуля.]]></item>
+        <item lang="en" id="rus_connect.conflict_addons_text"><![CDATA[Outdated versions of add-ons may conflict with other add-ons of "Russian localization of CS-Cart"<br/>These add-ons will be removed or replaced with new versions.<br/>Backup copies of add-ons will be created.<br/><b>Note!</b>Some settings may be lost due to incompatibility with new version of the add-on.]]></item>
+        <item lang="ru" id="rus_connect.upgrade.not_writable"><![CDATA[<p>Недостаточно прав на запись и изменение файлов и папок. <br/>Пожалуйста, установите права доступа на файлы и папки перечисленные ниже.<br/>Вы можете установить права доступа вручную или автоматически с помощью FTP. Для этого нажмите на кнопку перехода к настройкам FTP.]]></item>
+        <item lang="en" id="rus_connect.upgrade.not_writable"><![CDATA[<p>You do not have permissions to write and edit files and directories. <br/>Please set permissions to the files and directores listed below.<br/>You can set permissions manually or automatically using FTP. To do it, go to FTP settings.]]></item>
+        <item lang="ru" id="rus_connect.clear_access_id_header">Изменить лицензионный ключ</item>
+        <item lang="en" id="rus_connect.clear_access_id_header">Change license key</item>
+        <item lang="ru" id="rus_connect.clear_access_id">Повторить авторизацию</item>
+        <item lang="en" id="rus_connect.clear_access_id">Repeat authorization</item>
+        <item lang="ru" id="rus_connect.activate_title">Русская локализация - Активация</item>
+        <item lang="en" id="rus_connect.activate_title">Russian localization - Activation</item>
+        <item lang="ru" id="rus_connect.activate_subheader">Выполните активацию "Русской локализации CS-Cart"</item>
+        <item lang="en" id="rus_connect.activate_subheader">Activate "Russian localization for CS-Cart"</item>
+        <item lang="ru" id="rus_connect.license_key">Лицензионный ключ</item>
+        <item lang="en" id="rus_connect.license_key">License key</item>
+        <item lang="ru" id="rus_connect.license">Лицензия</item>
+        <item lang="en" id="rus_connect.license">License</item>
+        <item lang="ru" id="rus_connect.email_helpdesk">Ваш email</item>
+        <item lang="en" id="rus_connect.email_helpdesk">Your email</item>
+        <item lang="ru" id="rus_connect.please_enter_email">Введите email</item>
+        <item lang="en" id="rus_connect.please_enter_email">Enter email</item>
+        <item lang="ru" id="rus_connect.help_us_tooltip">Разрешить отправку анонимной статистики о функционировании "Русской локализации CS-Cart" разработчикам</item>
+        <item lang="en" id="rus_connect.help_us_tooltip">Allow sending statistics about "Russian localization for CS-Cart" to developers anonymously</item>
+        <item lang="ru" id="rus_connect.help_us">Помогите нам улучшить "Русскую локализацию"</item>
+        <item lang="en" id="rus_connect.help_us">Help us improve "Russian localization"</item>
+        <item lang="ru" id="rus_connect.terms_n_conditions">Я принимаю лицензионное соглашение "Русской локализации CS-Cart"</item>
+        <item lang="en" id="rus_connect.terms_n_conditions">I accept "Russian localization for CS-Cart" license agreement</item>
+        <item lang="ru" id="rus_connect.activate">Активировать</item>
+        <item lang="en" id="rus_connect.activate">Activate</item>
+        <item lang="ru" id="rus_connect.activate_popup_title">Необходима активация</item>
+        <item lang="en" id="rus_connect.activate_popup_title">Activation required</item>
+        <item lang="ru" id="rus_build_pack.install.dialog_title">Установка - Русская сборка - CS-Cart</item>
+        <item lang="en" id="rus_build_pack.install.dialog_title">Installation - Russian localization - CS-Cart</item>
+        <item lang="ru" id="rus_build_pack.install.function_title">Установка функций</item>
+        <item lang="en" id="rus_build_pack.install.function_title">Install functions</item>
+        <item lang="ru" id="rus_build_pack.install.function_text">Пожалуйста выберите функции которые необходимо установить</item>
+        <item lang="en" id="rus_build_pack.install.function_text">Please select functions to be installed</item>
+        <item lang="ru" id="rus_build_pack.install.currencies">Установить валюту "Российский рубль"</item>
+        <item lang="en" id="rus_build_pack.install.currencies">Set "Russian ruble" as currency</item>
+        <item lang="ru" id="rus_build_pack.install.currencies_tooltip">Будет создана новая валюта Российский рубль ("RUB"). Российский рубль будет установлен как основная валюта магазина. Это необходимо для корректной работы способов оплаты, доставки и интеграции с Яндекс</item>
+        <item lang="en" id="rus_build_pack.install.currencies_tooltip">New currency Russian ruble ("RUB") will be set. Russian ruble will be the main currency of the store. It is necessary for correct operation of payment and shipping methods and integration with Yandex</item>
+        <item lang="ru" id="rus_build_pack.install.currencies_sync">Синхронизировать курс валюты с ЦБРФ</item>
+        <item lang="en" id="rus_build_pack.install.currencies_sync">Synchronize currency rate with Bank of Russia</item>
+        <item lang="ru" id="rus_build_pack.install.currencies_sync_tooltip">Курсы валют будут синхронизированы в соответсвии с курсом валют Центрального банка Российской Федерации ( http://www.cbr.ru/ )</item>
+        <item lang="en" id="rus_build_pack.install.currencies_sync_tooltip">Currency rates will be synchronized according to the rates of Bank of Russia ( http://www.cbr.ru/ )</item>
+        <item lang="ru" id="rus_build_pack.install.payments">Установить методы оплаты</item>
+        <item lang="en" id="rus_build_pack.install.payments">Install payment methods</item>
+        <item lang="ru" id="rus_build_pack.install.payments_tooltip">Будут установлены платёжные процессоры для следующих способов оплаты: Robokassa, RBK Money, Qiwi, Сбербанк, Webmoney, PlatiDoma, Assist, Купи в кредит, Всё в кредит, YesCredit</item>
+        <item lang="en" id="rus_build_pack.install.payments_tooltip">the following payment methods will be installed: Robokassa, RBK Money, Qiwi, Sberbank, Webmoney, PlatiDoma, Assist, Kupi v kredit, Vse v kredit, YesCredit</item>
+        <item lang="ru" id="rus_build_pack.install.shippings">Установить методы доставки</item>
+        <item lang="en" id="rus_build_pack.install.shippings">Install shipping methods</item>
+        <item lang="ru" id="rus_build_pack.install.shippings_tooltip">Будут установлены способы доставки Почта РФ и EMS. Это позволит расчитывать стоимость доставки в режиме онлайн</item>
+        <item lang="en" id="rus_build_pack.install.shippings_tooltip">The Russian post and EMS shipping methods will be installed. It will allow to calculate shipping cost online</item>
+        <item lang="ru" id="rus_build_pack.install.final_text">Функции успешно установлены<![CDATA[<br />]]> Пожалуйста, выберите дополнительные модули которые Вам требуется установить</item>
+        <item lang="en" id="rus_build_pack.install.final_text">The functions are installed successfully<![CDATA[<br />]]> Please select additional add-ons to be installed</item>
+        <item lang="ru" id="rus_build_pack.install.final_title">Шаг 3 из 3. Установка дополнительных модулей</item>
+        <item lang="en" id="rus_build_pack.install.final_title">Step 3 of 3. Installation of additional add-ons</item>
+        <item lang="ru" id="rus_build_pack.install.addons_title">Установить модули</item>
+        <item lang="en" id="rus_build_pack.install.addons_title">Install add-ons</item>
+        <item lang="ru" id="rus_build_pack.buttons.function_button">Продолжить установку</item>
+        <item lang="en" id="rus_build_pack.buttons.function_button">Continue installation</item>
+        <item lang="ru" id="rus_build_pack.buttons.final_button">Завершить установку!</item>
+        <item lang="en" id="rus_build_pack.buttons.final_button">Complete installation!</item>
+        <item lang="ru" id="rus_build_pack.active_to">активен до</item>
+        <item lang="en" id="rus_build_pack.active_to">valid through</item>
+        <item lang="ru" id="rus_server.license_activate">Лицензионный ключ активирован</item>
+        <item lang="en" id="rus_server.license_activate">License key is activated</item>
+        <item lang="ru" id="rus_server.incorrect_key">Неправильный ключ!</item>  
+        <item lang="en" id="rus_server.incorrect_key">Incorrect key!</item>
+        <item lang="ru" id="rus_server.license_has_already_been_activated">Лицензионный ключ был активирован ранее</item>  
+        <item lang="en" id="rus_server.license_has_already_been_activated">License key has already been activated</item>
+        <item lang="ru" id="rus_connect.activate_true_text">Благодарим за Ваш выбор. Вам доступен функционал "Русской локацизиции CS-Cart"</item>
+        <item lang="en" id="rus_connect.activate_true_text">Thank you for your choice. Functionality of "Russian localization for CS-Cart" is available to you.</item>
+        <item lang="ru" id="rus_connect.activate_connect_error">Ошибка соединения с сервером</item>
+        <item lang="en" id="rus_connect.activate_connect_error">Server connection error</item>
+        <item lang="ru" id="rus_connect.activate_true_subheader">Лицензионный ключ активирован</item>  
+        <item lang="en" id="rus_connect.activate_true_subheader">License key is activated</item> 
+        <item lang="ru" id="rus_connect.upgrade.no_addons">Нет модулей для обновления</item> 
+        <item lang="en" id="rus_connect.upgrade.no_addons">No add-ons to upgrade</item> 
+        <item lang="ru" id="rus_connect.upgrade.no_schema">Не загружена схема для модуля: </item> 
+        <item lang="en" id="rus_connect.upgrade.no_schema">No add-on scheme is loaded: </item> 
+        <item lang="ru" id="rus_connect.upgrade.addons">Обновление модулей</item>
+        <item lang="en" id="rus_connect.upgrade.addons">Upgrading add-ons</item>  
+        <item lang="ru" id="rus_connect.upgrade.get_schemas">Получение схемы апгрейда</item> 
+        <item lang="en" id="rus_connect.upgrade.get_schemas">Retrieving upgrade sceme</item> 
+        <item lang="ru" id="rus_connect.upgrade.get_conflicts_schema">Загружаем схему конфликтующих аддонов</item> 
+        <item lang="en" id="rus_connect.upgrade.get_conflicts_schema">Loading conflict add-ons scheme</item> 
+        <item lang="ru" id="rus_connect.upgrade.generate_dirs">Генерируем пути к файлам и папкам</item>
+        <item lang="en" id="rus_connect.upgrade.generate_dirs">Creating paths to files and folders</item>      
+        <item lang="ru" id="rus_connect.upgrade.checking_permissions">Проверка прав доступа к файлам и папкам</item>  
+        <item lang="en" id="rus_connect.upgrade.checking_permissions">Checking for permissions of files and folders</item> 
+        <item lang="ru" id="rus_connect.upgrade.download_distr">Загрузка файлов</item>    
+        <item lang="en" id="rus_connect.upgrade.download_distr">Downloading files</item> 
+        <item lang="ru" id="rus_connect.upgrade.backup_files_conflict">Создание резервной копии конфликтных модулей</item> 
+        <item lang="en" id="rus_connect.upgrade.backup_files_conflict">Creating a backup copy of conflict add-ons</item> 
+        <item lang="ru" id="rus_connect.upgrade.backup_files">Создание резервной копии старой версии</item>  
+        <item lang="en" id="rus_connect.upgrade.backup_files">Creating a backup copy of the old version</item> 
+        <item lang="ru" id="rus_connect.upgrade.backup_settings">Создание резервной копии настроек</item>
+        <item lang="en" id="rus_connect.upgrade.backup_settings">Creating settings backup</item>   
+        <item lang="ru" id="rus_connect.upgrade.uninstall_conflict_addon">Удаление конфликтных аддонов</item> 
+        <item lang="en" id="rus_connect.upgrade.uninstall_conflict_addon">Removing conflict add-ons</item>
+        <item lang="ru" id="rus_connect.upgrade.remove_conflict_files">Удаление конфликтных файлов</item> 
+        <item lang="en" id="rus_connect.upgrade.remove_conflict_files">Removing conflict files</item> 
+        <item lang="ru" id="rus_connect.upgrade.uninstall_addon">Удаление модуля</item> 
+        <item lang="en" id="rus_connect.upgrade.uninstall_addon">Removing add-on</item>
+        <item lang="ru" id="rus_connect.upgrade.update_files">Обновление файлов модуля</item> 
+        <item lang="en" id="rus_connect.upgrade.update_files">Updating add-on files</item>
+        <item lang="ru" id="rus_connect.upgrade.install_addon">Установка модуля</item> 
+        <item lang="en" id="rus_connect.upgrade.install_addon">Installing add-on</item> 
+        <item lang="ru" id="rus_connect.check_conflict_title">Проверка конфигурации и конфликтов</item> 
+        <item lang="en" id="rus_connect.check_conflict_title">Checking configuration for conflicts</item>
+        <item lang="ru" id="rus_connect.button.check_conflict">Продолжить обновление</item>
+        <item lang="en" id="rus_connect.button.check_conflict">Continue upgrading</item>
+        <item lang="ru" id="rus_connect.backup_root">Папка резервной копии модуля:</item>
+        <item lang="en" id="rus_connect.backup_root">Add-on backup directory:</item>
+        <item lang="ru" id="rus_connect.upgrade.restore_settings">Востановление настроек</item>
+        <item lang="en" id="rus_connect.upgrade.restore_settings">Restoring settings</item>
+        <item lang="ru" id="rus_connect.check_install">Загрузка файлов</item> 
+        <item lang="en" id="rus_connect.check_install">Downloading files</item>
+        <item lang="ru" id="rus_connect.check_install_subheader">Файлы модулей загружены на Ваш сервер</item>
+        <item lang="en" id="rus_connect.check_install_subheader">Add-on files are uploaded to your server</item>
+        <item lang="ru" id="rus_connect.check_install_true"><![CDATA[На следующем шаге, будет выполнено: <br/>1. Проверка на наличие конфликтующих модулей<br/>2. Проверка прав доступа на запись файлов.<br/>Вы можете перейти к следующему шагу, при этом будут обновлятся модули со статусом "Успешно".]]></item>
+        <item lang="en" id="rus_connect.check_install_true"><![CDATA[At the next step the following will be done: <br/>1. Check for conflict add-ons<br/>2. Check for writing permissions.<br/>You can move to the next step, add-ons with the "Successful" status will be upgraded.]]></item>
+        <item lang="ru" id="rus_connect.check_install_text"><![CDATA[<br/>Если модуль не загрузился, то возможно мы подготавливаем новую версию данного модуля или на сервере производятся работы<br/>Вы можете продолжить установку, однако при этом будут установлены только загруженные модули.<br/> Для повторной загрузки нажмите "Повторить".]]></item>
+        <item lang="en" id="rus_connect.check_install_text"><![CDATA[<br/>If the add-on was not downloaded, a new version of this add-on may be in progress or the server is being maintained<br/>You can continue installation but only downloaded add-ons will be installed.<br/> To repeat downloading click "Reload".]]></item>
+        <item lang="ru" id="rus_connect.download_addons">Статус загрузки модулей</item>
+        <item lang="en" id="rus_connect.download_addons">Add-ons download status</item>
+        <item lang="ru" id="rus_connect.button.reload">Повторить загрузку</item>
+        <item lang="en" id="rus_connect.button.reload">Reload</item>
+        <item lang="ru" id="rus_connect.button.repeat_check_perm">Повторить проверку прав</item>
+        <item lang="en" id="rus_connect.button.repeat_check_perm">Repeat checking for permissions</item>
+        <item lang="ru" id="rus_connect.install_dir">Путь к файлам</item>
+        <item lang="en" id="rus_connect.install_dir">Path to files</item>
+        <item lang="ru" id="rus_connect.check_permissions_files">Права доступа на запись файлов и папок проверены (список файлов)</item>
+        <item lang="en" id="rus_connect.check_permissions_files">Writing permissions are checked (list of files)</item>
+        <item lang="ru" id="rus_connect.conflict_addons_text_true">Будут внесены изменения в следующие файлы и папки:</item>
+        <item lang="en" id="rus_connect.conflict_addons_text_true">The following files will be changed:</item>
+        <item lang="ru" id="rus_connect.conflict_addons_done"><![CDATA[<p>Конфликтующих модулей не обнаружено</p>]]></item>
+        <item lang="en" id="rus_connect.conflict_addons_done"><![CDATA[<p>No conflict add-ons are found</p>]]></item>
+        <item lang="ru" id="rus_connect.current_addons">Установленные версии модулей "Русской локализации"</item>
+        <item lang="en" id="rus_connect.current_addons">Installed versions of "Russian localization" add-ons</item>
+    </language_variables>
+</addon>
