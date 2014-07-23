@@ -18,6 +18,7 @@
                     <li class="user-name">{$user_info.user_login}</li>
                 {/if}
             {/if}
+            <li><a href="{"agents.office"|fn_url}" rel="nofollow" class="underlined">{__("agents_office")}</a></li>
             <li><a href="{"profiles.update"|fn_url}" rel="nofollow" class="underlined">{__("profile_details")}</a></li>
             <li><a href="{"orders.downloads"|fn_url}" rel="nofollow" class="underlined">{__("downloads")}</a></li>
         {elseif $user_data.firstname || $user_data.lastname}
@@ -60,6 +61,7 @@
     <div class="buttons-container">
         {if $auth.user_id}
             <a href="{"auth.logout?redirect_url=`$return_current_url`"|fn_url}" rel="nofollow" class="account">{__("sign_out")}</a>
+            <a href="{"agents.add_subagent"|fn_url}" rel="nofollow" class="account">{__("register_subagent")}</a>
         {else}
             <a href="{if $runtime.controller == "auth" && $runtime.mode == "login_form"}{$config.current_url|fn_url}{else}{"auth.login_form?return_url=`$return_current_url`"|fn_url}{/if}" {if $settings.General.secure_auth != "Y"} data-ca-target-id="login_block{$block.snapping_id}" class="cm-dialog-opener cm-dialog-auto-size account"{else}class="account"{/if} rel="nofollow">{__("sign_in")}</a> | <a href="{"profiles.add"|fn_url}" rel="nofollow" class="account">{__("register")}</a>
             {if $settings.General.secure_auth != "Y"}
